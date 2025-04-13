@@ -12,6 +12,8 @@ export interface Book {
   id: string;
   title: string;
   description: string;
-  category: string;
-  ownerName: string;
+  author: string;
+  city: string;
+  ownerEmail: string;
+  status: string;
 }

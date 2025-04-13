@@ -12,18 +12,18 @@ export default function BookCard({ book }: { book: Book }) {
     >
       <Card className="bg-white shadow-xl rounded-3xl overflow-hidden border border-gray-200 hover:border-indigo-500 transition-all duration-300">
         <CardContent className="p-6">
-          <h3 className="text-2xl font-bold text-gray-800 mb-2 truncate">
+          <h3 className="text-sky-300xl font-bold text-gray-800 mb-2 truncate">
             {book.title}
           </h3>
-          <p className="text-gray-500 mb-4 line-clamp-3 text-sm">
+          <p className="text-gray-500 mb-4 line-clamp-3 text-lg">
             {book.description}
           </p>
           <div className="flex items-center justify-between text-xs">
-            <Badge className="bg-indigo-100 text-indigo-600 font-medium px-2 py-1 rounded-full">
-              {book.category}
-            </Badge>
-            <span className="text-gray-400 font-medium">Owner: {book.ownerName}</span>
+            <span className="text-gray-400 font-medium">Owner: {book.city}</span>
           </div>
+            <Badge className="bg-indigo-100 text-indigo-600 font-medium px-2 py-1 rounded-full">
+              {book.status}
+            </Badge>
         </CardContent>
       </Card>
     </motion.div>

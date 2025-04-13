@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { Book } from "@/types";
 import BookCard from "@/components/book/BooksCard";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function BooksPage() {
   const [books, setBooks] = useState<Book[]>([]);
@@ -20,7 +21,7 @@ export default function BooksPage() {
     <div className="p-6 space-y-4">
       <h1 className="text-3xl font-bold">Available Books</h1>
       {loading ? (
-        <p>Loading books...</p>
+        <Skeleton />
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {books.map(book => <BookCard key={book.id} book={book} />)}

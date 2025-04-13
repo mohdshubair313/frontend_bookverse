@@ -40,7 +40,7 @@ export default function BookDetailPage() {
           </div>
 
           {isOwner && (
-            <Button className="mt-4" onClick={() => router.push(`/books/${id}/edit`)}>
+            <Button className="mt-4" onClick={() => router.push(`/getAllbooks/${id}/edit`)}>
               Edit Book
             </Button>
           )}
