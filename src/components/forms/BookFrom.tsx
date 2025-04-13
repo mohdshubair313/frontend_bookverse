@@ -14,7 +14,7 @@ interface Props {
 }
 
 export default function BookForm({ initialData, onSuccess }: Props) {
-  const { user } = useAuth();
+  const { currentUser } = useAuth();
   const [formData, setFormData] = useState({
     title: "",
     description: "",
@@ -39,7 +39,7 @@ export default function BookForm({ initialData, onSuccess }: Props) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!user) return alert("Please login first");
+    if (!currentUser) return alert("Please login first");
 
     setLoading(true);
     try {
