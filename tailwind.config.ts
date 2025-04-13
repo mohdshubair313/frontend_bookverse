@@ -9,6 +9,9 @@ const config: Config = {
   ],
   theme: {
   	extend: {
+		backdropBlur: {
+			sm: '4px',
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -58,6 +61,5 @@ const config: Config = {
   		}
   	}
   },
-  plugins: [require("tailwindcss-animate")],
 };
 export default config;

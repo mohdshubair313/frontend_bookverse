@@ -18,6 +18,7 @@ export default function AddBookForm() {
     description: "",
     author: "",
     city: "",
+    ownerEmail: "",
     status: "available",
   });
 
@@ -110,6 +111,14 @@ export default function AddBookForm() {
           onChange={handleChange}
           required
           className="rounded-xl"
+        />
+        <Input 
+        name = "ownerEmail"
+        placeholder="Enter you Email"
+        value={formData.ownerEmail}
+        onChange={handleChange}
+        required
+        className="rounded-xl"
         />
         <Input
           name="city"
