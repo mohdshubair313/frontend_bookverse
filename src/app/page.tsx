@@ -69,6 +69,12 @@ export default function LandingPage() {
             ➕ Add New Book
           </Button>
         )}
+
+        <Link href="https://github.com/mohdshubair313/frontend_bookverse">
+        <Button>
+          Github link
+        </Button>
+        </Link>
       </div>
     </main>
   );
